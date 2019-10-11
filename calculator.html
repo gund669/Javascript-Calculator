@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--- Creating a calculator using Html, javascript for functionality and css to style the calculator-->
+
+<html>
+<head>
+	<title>MyCalculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<header>
+		<h3 id="fot" style="text-align: center;">Calculator with Gundo Nemalili</h3>
+	</header>
+	  <div id='calc-contain'>
+  
+                    <form name="calculator">
+                      
+                      <input type="text" name="answer" />
+                      <br>
+                      <!--Taking the numbers input and the calculator operators in the first row of the calculator-->
+                      <!-- Onclick fuction is being used to execute the input when a certain value is clicked from the calculator-->
+
+                      <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+                      <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+                      <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+                      <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+                      <br/>
+                      <!--Taking the numbers input and the calculator operators in the second row of the calculator-->
+                      <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+                      <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+                      <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+                      <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+                      </br>
+                      <!--Taking the numbers input and the calculator operators in the third row of the calculator-->
+                      <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+                      <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+                      <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+                      <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+                      </br>
+
+                      <!--Taking the numbers input and the calculator operators in the fourth row of the calculator-->
+                      <!-- eval(Calculator.answer.value) is interpreting the value of the input as Javascript. So when there would be 4 + 6 in the input, it'll be evaluated as Javascript and return the outcome -->
+                  
+                      <input type="button" value=" c " onclick="calculator.answer.value = ''" />
+                      <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+                      <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+                      <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+                      </br>
+            
+              
+                    </form>
+           
+    </div>
+
+    <div>
+        <footer id="fot">Coded by Gundo Nemalili</footer>
+    </div>
+
+</body>
+</html>
