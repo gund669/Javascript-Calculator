@@ -54,4 +54,16 @@
     margin: 10px 400px;
     border-radius: 1px;
   }  
-    
+
+  button{
+   color: burlywood;
+   text-decoration-color: black;
+   align-content: center;
+  }
+
+#opening{
+  background-color: crimson;
+}
+#home{
+  margin: 10px 400px;
+}
